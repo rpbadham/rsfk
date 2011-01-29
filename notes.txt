@@ -6,8 +6,14 @@ Git remote heroku added
 git push heroku master
 $ git push
 $ git push heroku master
-Richards-MacBook:rsfk richard$ git checkout -b static-pages
+$ git checkout -b static-pages
 Switched to a new branch 'static-pages'
-Richards-MacBook:rsfk richard$ 
-Richards-MacBook:rsfk richard$ rails generate controller Pages home registration contact
+$ 
+$ rails generate controller Pages home registration contact
 
+$ git add .
+$ git commit -am "Done with static pages"
+$ git checkout master
+$ git merge static-pages
+$ git push
+$ git push heroku

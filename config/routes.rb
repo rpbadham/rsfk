@@ -1,9 +1,14 @@
 Rsfk::Application.routes.draw do
-  get "pages/home"
+  
+  match '/home', :to => 'pages#home'
 
-  get "pages/registration"
+  match '/registration', :to => 'pages#registration'
 
-  get "pages/contact"
+  match '/contact', :to => 'pages#contact'
+  
+  match '/admin', :to => 'pages#admin'
+  
+  root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
