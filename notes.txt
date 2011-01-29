@@ -1,2 +1,13 @@
 $ heroku create
 $ git push heroku master
+Creating young-ice-927.... done
+http://young-ice-927.heroku.com/ | git@heroku.com:young-ice-927.git
+Git remote heroku added
+git push heroku master
+$ git push
+$ git push heroku master
+Richards-MacBook:rsfk richard$ git checkout -b static-pages
+Switched to a new branch 'static-pages'
+Richards-MacBook:rsfk richard$ 
+Richards-MacBook:rsfk richard$ rails generate controller Pages home registration contact
+
